@@ -1,0 +1,23 @@
+algorithm,workload,n,median_ms,min_ms,max_ms,reps,extra
+simplex (module),random-dense-lp,4,0.002309,0.001908,0.003313,5,objective=18.514634;ratio=1.000000
+greedy density (heuristic),random-dense-lp,4,0.000301,0.000201,0.000402,5,objective=14.498277;ratio=0.783071
+vertex enumeration (brute force),random-dense-lp,4,0.033536,0.031929,0.033937,3,objective=18.514634;ratio=1.000000
+simplex (module),random-dense-lp,6,0.002510,0.002310,0.003615,5,objective=55.367228;ratio=1.000000
+greedy density (heuristic),random-dense-lp,6,0.000602,0.000502,0.000803,5,objective=55.367228;ratio=1.000000
+vertex enumeration (brute force),random-dense-lp,6,0.501926,0.434353,0.774024,3,objective=55.367228;ratio=1.000000
+simplex (module),random-dense-lp,8,0.003816,0.003715,0.005824,5,objective=46.719789;ratio=1.000000
+greedy density (heuristic),random-dense-lp,8,0.000904,0.000903,0.001004,5,objective=42.355323;ratio=0.906582
+vertex enumeration (brute force),random-dense-lp,8,10.366030,10.316530,12.711897,3,objective=46.719789;ratio=1.000000
+simplex (module),random-dense-lp,10,0.004117,0.003815,0.005823,5,objective=35.477453;ratio=1.000000
+greedy density (heuristic),random-dense-lp,10,0.001306,0.001305,0.001606,5,objective=34.397605;ratio=0.969562
+vertex enumeration (brute force),random-dense-lp,10,255.962699,254.474294,289.128134,3,objective=35.477453;ratio=1.000000
+simplex (module),random-dense-lp,16,0.011647,0.010141,0.016265,5,objective=78.794873;ratio=1.000000
+greedy density (heuristic),random-dense-lp,16,0.004016,0.003816,0.004116,5,objective=68.042305;ratio=0.863537
+simplex (module),random-dense-lp,32,0.044881,0.032030,0.079119,5,objective=22.902857;ratio=1.000000
+greedy density (heuristic),random-dense-lp,32,0.017269,0.016767,0.021487,5,objective=14.412726;ratio=0.629298
+simplex (module),random-dense-lp,64,0.344390,0.171593,0.382142,5,objective=27.404288;ratio=1.000000
+greedy density (heuristic),random-dense-lp,64,0.085645,0.073497,0.110948,5,objective=12.496675;ratio=0.456012
+simplex (module),random-dense-lp,128,2.324480,2.060013,3.509662,5,objective=22.380137;ratio=1.000000
+greedy density (heuristic),random-dense-lp,128,0.640585,0.541184,1.126646,5,objective=12.609045;ratio=0.563403
+simplex (module),random-dense-lp,256,11.790378,8.098480,22.860751,5,objective=22.158522;ratio=1.000000
+greedy density (heuristic),random-dense-lp,256,2.843273,2.611338,5.156609,5,objective=11.526589;ratio=0.520188

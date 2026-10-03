@@ -1,0 +1,5 @@
+algorithm,workload,n,median_ms,min_ms,max_ms,reps,extra
+christofides,euclidean-circle,32,0.006105,0.005905,0.008106,5,cost=6.273097
+christofides,euclidean-circle,64,0.020915,0.020515,0.022317,5,cost=6.280662
+christofides,euclidean-circle,128,0.069250,0.068550,0.070151,5,cost=6.282555
+christofides,euclidean-circle,256,0.280504,0.259788,0.421506,5,cost=6.283028

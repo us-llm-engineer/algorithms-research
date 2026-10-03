@@ -330,7 +330,7 @@ template <class Key, class Compare = std::less<Key>> class FibonacciHeap {
 
     for (std::size_t i = 0; i < nodes_.size(); ++i) {
       if (!nodes_[i].alive) continue;
-      std::size_t subtree_size = get_subtree_size(i);
+      [[maybe_unused]] std::size_t subtree_size = get_subtree_size(i);
       std::size_t d = nodes_[i].degree;
       if (d + 2 < 65) {
         assert(subtree_size >= fib[d + 2]);
@@ -358,7 +358,7 @@ template <class Key, class Compare = std::less<Key>> class FibonacciHeap {
     // 10. Degree bound: max degree <= floor(log_phi(n))
     if (size_ > 1) {
       const double kPhi = 1.6180339887498949;
-      std::size_t max_allowed_degree =
+      [[maybe_unused]] std::size_t max_allowed_degree =
           size_ <= 1 ? 0 : static_cast<std::size_t>(std::log(static_cast<double>(size_)) / std::log(kPhi) + 1e-9) + 1;
       assert(max_degree() <= max_allowed_degree);
     }

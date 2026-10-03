@@ -1,0 +1,31 @@
+algorithm,workload,n,median_ms,min_ms,max_ms,reps,extra
+sort + unique (brute force),distinct-count,4096,0.235282,0.226483,0.267080,5,memory_kb=32;ratio=1.000000
+hash set (exact),distinct-count,4096,0.431268,0.325275,1.076818,5,memory_kb=80;ratio=1.000000
+linear counting 64 Kbit (heuristic),distinct-count,4096,0.130090,0.113891,1.989949,5,memory_kb=8;ratio=1.002352
+HyperLogLog p=10,distinct-count,4096,0.036997,0.033697,0.042097,5,memory_kb=1.000000;ratio=0.963763
+HyperLogLog p=14,distinct-count,4096,0.203985,0.189186,0.259780,5,memory_kb=16.000000;ratio=0.990505
+sort + unique (brute force),distinct-count,16384,1.586579,1.281803,2.175735,5,memory_kb=128;ratio=1.000000
+hash set (exact),distinct-count,16384,3.472236,2.228730,7.527427,5,memory_kb=320;ratio=1.000000
+linear counting 64 Kbit (heuristic),distinct-count,16384,0.161388,0.146789,0.215784,5,memory_kb=8;ratio=1.003088
+HyperLogLog p=10,distinct-count,16384,0.129090,0.114691,0.148389,5,memory_kb=1.000000;ratio=0.964893
+HyperLogLog p=14,distinct-count,16384,0.345273,0.315976,0.374572,5,memory_kb=16.000000;ratio=1.000885
+sort + unique (brute force),distinct-count,65536,7.561325,6.210827,9.972641,5,memory_kb=512;ratio=1.000000
+hash set (exact),distinct-count,65536,24.140064,17.455873,24.852310,5,memory_kb=1280;ratio=1.000000
+linear counting 64 Kbit (heuristic),distinct-count,65536,0.294377,0.241782,0.386171,5,memory_kb=8;ratio=1.000181
+HyperLogLog p=10,distinct-count,65536,0.483963,0.447266,0.543259,5,memory_kb=1.000000;ratio=1.049723
+HyperLogLog p=14,distinct-count,65536,0.874434,0.801739,0.976425,5,memory_kb=16.000000;ratio=0.989145
+sort + unique (brute force),distinct-count,262144,43.603484,35.029336,45.087472,5,memory_kb=2048;ratio=1.000000
+hash set (exact),distinct-count,262144,160.921662,125.745937,300.908817,5,memory_kb=5120;ratio=1.000000
+linear counting 64 Kbit (heuristic),distinct-count,262144,0.468364,0.406669,0.685848,5,memory_kb=8;ratio=1.001317
+HyperLogLog p=10,distinct-count,262144,0.966227,0.901231,1.131114,5,memory_kb=1.000000;ratio=0.997273
+HyperLogLog p=14,distinct-count,262144,1.507685,1.431391,2.367420,5,memory_kb=16.000000;ratio=1.014600
+sort + unique (brute force),distinct-count,1048576,134.895642,112.434649,140.756496,3,memory_kb=8192;ratio=1.000000
+hash set (exact),distinct-count,1048576,509.147381,461.277893,588.713166,3,memory_kb=20480;ratio=1.000000
+linear counting 64 Kbit (heuristic),distinct-count,1048576,6.654938,4.756442,9.196922,3,memory_kb=8;ratio=1.032143
+HyperLogLog p=10,distinct-count,1048576,7.533564,6.158927,8.739413,3,memory_kb=1.000000;ratio=0.998717
+HyperLogLog p=14,distinct-count,1048576,10.755829,6.094085,13.324352,3,memory_kb=16.000000;ratio=0.999394
+sort + unique (brute force),distinct-count,4194304,614.179345,590.033618,1071.548688,3,memory_kb=32768;ratio=1.000000
+hash set (exact),distinct-count,4194304,3426.732510,3002.087701,4285.678442,3,memory_kb=81920;ratio=1.000000
+linear counting 64 Kbit (heuristic),distinct-count,4194304,7.594473,6.487950,8.028843,3,memory_kb=8;ratio=0.346574
+HyperLogLog p=10,distinct-count,4194304,18.045348,17.739669,22.313751,3,memory_kb=1.000000;ratio=1.016806
+HyperLogLog p=14,distinct-count,4194304,17.921356,15.742108,19.411653,3,memory_kb=16.000000;ratio=1.001071

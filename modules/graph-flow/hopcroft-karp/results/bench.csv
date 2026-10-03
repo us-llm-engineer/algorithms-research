@@ -1,0 +1,29 @@
+algorithm,workload,n,median_ms,min_ms,max_ms,reps,extra
+Hopcroft-Karp,random-deg3,1000,0.570130,0.372790,1.135310,5,matching=940;ratio=1.000000
+greedy (near-optimal heuristic),random-deg3,1000,0.006710,0.005390,0.009460,5,matching=822;ratio=0.874468
+Kuhn augmenting DFS (baseline),random-deg3,1000,3.512850,2.862090,7.500460,5,matching=940;ratio=1.000000
+Hopcroft-Karp,random-deg3,4000,2.191640,1.937650,6.431480,5,matching=3768;ratio=1.000000
+greedy (near-optimal heuristic),random-deg3,4000,0.043780,0.041140,0.046860,5,matching=3285;ratio=0.871815
+Kuhn augmenting DFS (baseline),random-deg3,4000,71.913270,61.114350,114.552291,5,matching=3768;ratio=1.000000
+Hopcroft-Karp,random-deg3,16000,17.335582,13.442878,21.058099,5,matching=15049;ratio=1.000000
+greedy (near-optimal heuristic),random-deg3,16000,0.194585,0.190886,0.425167,5,matching=13207;ratio=0.877600
+Kuhn augmenting DFS (baseline),random-deg3,16000,1457.447580,1134.531754,2055.897977,5,matching=15049;ratio=1.000000
+Hopcroft-Karp,random-deg3,64000,82.951217,75.632471,123.752292,3,matching=60124;ratio=1.000000
+greedy (near-optimal heuristic),random-deg3,64000,1.216109,0.967988,1.793223,3,matching=52725;ratio=0.876938
+Kuhn augmenting DFS (baseline),random-deg3,64000,59895.567358,22585.503550,96117.089990,3,matching=60124;ratio=1.000000
+Hopcroft-Karp,random-deg3,128000,188.227722,186.148171,481.237260,3,matching=120207;ratio=1.000000
+greedy (near-optimal heuristic),random-deg3,128000,5.039225,3.029388,7.057132,3,matching=105308;ratio=0.876055
+Hopcroft-Karp,staircase,1000,0.195432,0.169277,0.270980,5,matching=1000;ratio=1.000000
+greedy (near-optimal heuristic),staircase,1000,0.002528,0.002430,0.002820,5,matching=999;ratio=0.999000
+Kuhn augmenting DFS (baseline),staircase,1000,0.072048,0.058046,0.073894,5,matching=1000;ratio=1.000000
+Hopcroft-Karp,staircase,4000,0.845316,0.794367,0.961894,5,matching=4000;ratio=1.000000
+greedy (near-optimal heuristic),staircase,4000,0.010404,0.010015,0.025572,5,matching=3999;ratio=0.999750
+Kuhn augmenting DFS (baseline),staircase,4000,1.701326,1.255236,5.227754,5,matching=4000;ratio=1.000000
+Hopcroft-Karp,staircase,16000,6.580317,4.150545,9.044217,5,matching=16000;ratio=1.000000
+greedy (near-optimal heuristic),staircase,16000,0.040934,0.040253,0.153623,5,matching=15999;ratio=0.999938
+Kuhn augmenting DFS (baseline),staircase,16000,14.810527,12.629371,17.055854,5,matching=16000;ratio=1.000000
+Hopcroft-Karp,staircase,64000,29.176811,19.527825,29.215119,3,matching=64000;ratio=1.000000
+greedy (near-optimal heuristic),staircase,64000,1.032483,0.986396,2.362489,3,matching=63999;ratio=0.999984
+Kuhn augmenting DFS (baseline),staircase,64000,132.738198,132.274509,144.597995,3,matching=64000;ratio=1.000000
+Hopcroft-Karp,staircase,128000,39.917493,27.271399,60.235796,3,matching=128000;ratio=1.000000
+greedy (near-optimal heuristic),staircase,128000,1.947804,1.521258,2.094135,3,matching=127999;ratio=0.999992

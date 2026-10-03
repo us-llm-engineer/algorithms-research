@@ -1,0 +1,25 @@
+algorithm,workload,n,median_ms,min_ms,max_ms,reps,extra
+Dijkstra + potentials (module),random-sparse,50,0.181087,0.163188,0.247382,5,flow=20;cost=3235;ratio=1.000000
+Bellman-Ford SSP (brute force),random-sparse,50,0.122291,0.118592,0.130391,3,flow=20;cost=3235;ratio=1.000000
+SPFA SSP (baseline),random-sparse,50,0.068795,0.065296,0.074694,3,flow=20;cost=3235;ratio=1.000000
+greedy no-undo (heuristic),random-sparse,50,0.115491,0.110992,0.284880,3,flow=20;cost=3244;ratio=1.002782
+Dijkstra + potentials (module),random-sparse,100,0.586157,0.513163,0.944732,5,flow=35;cost=4885;ratio=1.000000
+Bellman-Ford SSP (brute force),random-sparse,100,0.852539,0.787244,1.022427,3,flow=35;cost=4885;ratio=1.000000
+SPFA SSP (baseline),random-sparse,100,0.411370,0.299878,0.639354,3,flow=35;cost=4885;ratio=1.000000
+greedy no-undo (heuristic),random-sparse,100,0.400571,0.388872,0.636754,3,flow=35;cost=4886;ratio=1.000205
+Dijkstra + potentials (module),random-sparse,200,4.072606,2.231739,10.213963,5,flow=59;cost=12000;ratio=1.000000
+Bellman-Ford SSP (brute force),random-sparse,200,3.889319,3.451950,8.344198,3,flow=59;cost=12000;ratio=1.000000
+SPFA SSP (baseline),random-sparse,200,1.257010,1.235110,1.351202,3,flow=59;cost=12000;ratio=1.000000
+greedy no-undo (heuristic),random-sparse,200,1.593785,1.355002,1.606784,3,flow=59;cost=12363;ratio=1.030250
+Dijkstra + potentials (module),random-sparse,400,5.982768,4.130901,8.712471,5,flow=26;cost=4845;ratio=1.000000
+Bellman-Ford SSP (brute force),random-sparse,400,5.846778,5.512802,10.174165,3,flow=26;cost=4845;ratio=1.000000
+SPFA SSP (baseline),random-sparse,400,2.555215,2.454923,4.792054,3,flow=26;cost=4845;ratio=1.000000
+greedy no-undo (heuristic),random-sparse,400,1.912462,1.811069,3.047780,3,flow=26;cost=5056;ratio=1.043550
+Dijkstra + potentials (module),random-sparse,800,7.629049,7.253677,10.683529,5,flow=51;cost=12498;ratio=1.000000
+Bellman-Ford SSP (brute force),random-sparse,800,17.444640,16.931277,20.001257,3,flow=51;cost=12498;ratio=1.000000
+SPFA SSP (baseline),random-sparse,800,15.703167,6.282546,18.240284,3,flow=51;cost=12498;ratio=1.000000
+greedy no-undo (heuristic),random-sparse,800,9.222534,4.325188,15.177904,3,flow=51;cost=12696;ratio=1.015843
+Dijkstra + potentials (module),random-sparse,1600,31.629316,21.157773,46.062880,5,flow=29;cost=5247;ratio=1.000000
+Bellman-Ford SSP (brute force),random-sparse,1600,33.959338,26.791513,35.027046,3,flow=29;cost=5247;ratio=1.000000
+SPFA SSP (baseline),random-sparse,1600,16.440243,14.421998,21.310194,3,flow=29;cost=5247;ratio=1.000000
+greedy no-undo (heuristic),random-sparse,1600,12.616813,11.370684,13.011004,3,flow=29;cost=5324;ratio=1.014675

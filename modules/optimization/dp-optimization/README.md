@@ -88,7 +88,7 @@ Dashed lines are brute-force strategies, dotted lines are heuristics or approxim
 
 <!-- FIGURES:results/bench.csv -->
 <table>
-<tr><td width="50%"><img src="results/figures/partition-squared.png" alt="partition-squared (results/bench.csv)"><br><sub>partition-squared (results/bench.csv)</sub></td><td width="50%"><img src="results/figures/optimal-merge.png" alt="optimal-merge (results/bench.csv)"><br><sub>optimal-merge (results/bench.csv)</sub></td></tr>
+<tr><td width="50%"><img src="results/figures/partition-squared.png" alt="partition-squared (results/bench.csv)"><br><sub>dp-optimization: runtime on splitting n numbers into 16 segments of minimal squared sums. Both axes are logarithmic. Largest size n = 32,768: only divide-and-conquer DP (module) was run, taking 66.4 ms.</sub></td><td width="50%"><img src="results/figures/optimal-merge.png" alt="optimal-merge (results/bench.csv)"><br><sub>dp-optimization: runtime on optimal adjacent merging of n weights. Log-log axes; dashed is brute force, dotted is heuristic, bold is this module. Largest size n = 2,048: only monotone-split DP (module) was run, taking 897 ms. Source: optimization/dp-optimization/results/bench.csv.</sub></td></tr>
 </table>
 <!-- /FIGURES -->
 

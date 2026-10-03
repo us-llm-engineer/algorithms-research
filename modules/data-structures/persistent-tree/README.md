@@ -104,7 +104,7 @@ Dashed lines are brute-force strategies, dotted lines are heuristics or approxim
 
 <!-- FIGURES:results/bench.csv -->
 <table>
-<tr><td width="50%"><img src="results/figures/build-versions.png" alt="build-versions (results/bench.csv)"><br><sub>build-versions (results/bench.csv)</sub></td><td width="50%"><img src="results/figures/query-old-versions.png" alt="query-old-versions (results/bench.csv)"><br><sub>query-old-versions (results/bench.csv)</sub></td></tr>
+<tr><td width="50%"><img src="results/figures/build-versions.png" alt="build-versions (results/bench.csv)"><br><sub>persistent-tree: runtime on n updates, each creating a new version. Both axes are logarithmic. Largest size n = 262,144: persistent map (module) needs 1,703 ms against 433 ms for ephemeral std::map (no history). Data: data-structures/persistent-tree/results/bench.csv.</sub></td><td width="50%"><img src="results/figures/query-old-versions.png" alt="query-old-versions (results/bench.csv)"><br><sub>How persistent-tree scales on n lookups against random past versions. Both axes are logarithmic. At n = 262,144, persistent map (module) takes 791 ms and is the only strategy run at that size.</sub></td></tr>
 </table>
 <!-- /FIGURES -->
 

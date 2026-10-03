@@ -100,7 +100,7 @@ Dashed lines are brute-force strategies, dotted lines are heuristics or approxim
 
 <!-- FIGURES:results/bench.csv -->
 <table>
-<tr><td width="50%"><img src="results/figures/distinct-count.png" alt="distinct-count (results/bench.csv)"><br><sub>distinct-count (results/bench.csv)</sub></td><td width="50%"><img src="results/figures/distinct-count-quality.png" alt="distinct-count quality (results/bench.csv)"><br><sub>distinct-count quality (results/bench.csv)</sub></td></tr>
+<tr><td width="50%"><img src="results/figures/distinct-count.png" alt="distinct-count (results/bench.csv)"><br><sub>hyperloglog: runtime on a stream of n items containing n/2 distinct values. Both axes are logarithmic. Largest size n = 4,194,304: HyperLogLog p=14 needs 17.9 ms, linear counting 64 Kbit (heuristic) only 7.59 ms and hash set (exact) 3,427 ms.</sub></td><td width="50%"><img src="results/figures/distinct-count-quality.png" alt="distinct-count quality (results/bench.csv)"><br><sub>How close each hyperloglog strategy gets to optimal on a stream of n items containing n/2 distinct values. Largest size n = 4,194,304: HyperLogLog p=10 reaches 1.017 while linear counting 64 Kbit (heuristic) lands at 0.347. Data: sketches/hyperloglog/results/bench.csv.</sub></td></tr>
 </table>
 <!-- /FIGURES -->
 

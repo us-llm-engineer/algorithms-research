@@ -100,7 +100,7 @@ Dashed lines are brute-force strategies, dotted lines are heuristics or approxim
 
 <!-- FIGURES:results/bench.csv -->
 <table>
-<tr><td width="50%"><img src="results/figures/random-euclid.png" alt="random-euclid (results/bench.csv)"><br><sub>random-euclid (results/bench.csv)</sub></td><td width="50%"><img src="results/figures/random-euclid-quality.png" alt="random-euclid quality (results/bench.csv)"><br><sub>random-euclid quality (results/bench.csv)</sub></td></tr>
+<tr><td width="50%"><img src="results/figures/random-euclid.png" alt="random-euclid (results/bench.csv)"><br><sub>How christofides scales on random Euclidean TSP instances with n cities in the unit square. Largest size n = 256: christofides needs 1.01 ms, nearest neighbour (heuristic) only 0.194 ms and nearest neighbour + 2-opt (heuristic) 3.47 ms.</sub></td><td width="50%"><img src="results/figures/random-euclid-quality.png" alt="random-euclid quality (results/bench.csv)"><br><sub>Quality versus the exact reference for random Euclidean TSP instances with n cities in the unit square (christofides). 1.0 means optimal. At n = 256, christofides scores 1.168; double-tree MST (2-approx) is furthest from 1.0 at 1.289. Data: approximation/christofides/results/bench.csv.</sub></td></tr>
 </table>
 <!-- /FIGURES -->
 

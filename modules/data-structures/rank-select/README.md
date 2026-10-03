@@ -91,7 +91,7 @@ Dashed lines are brute-force strategies, dotted lines are heuristics or approxim
 
 <!-- FIGURES:results/bench.csv -->
 <table>
-<tr><td width="50%"><img src="results/figures/rank.png" alt="rank (results/bench.csv)"><br><sub>rank (results/bench.csv)</sub></td><td width="50%"><img src="results/figures/select.png" alt="select (results/bench.csv)"><br><sub>select (results/bench.csv)</sub></td></tr>
+<tr><td width="50%"><img src="results/figures/rank.png" alt="rank (results/bench.csv)"><br><sub>Median time per strategy for 100,000 rank queries on 2^n random bits (rank-select). Both axes are logarithmic. At n = 26, rank-select Fast takes 3.33 ms (rank 2 of 3); prefix-count array is fastest at 2.12 ms.</sub></td><td width="50%"><img src="results/figures/select.png" alt="select (results/bench.csv)"><br><sub>How rank-select scales on 100,000 select queries on 2^n random bits. Both axes are logarithmic. At n = 26, rank-select Fast is fastest at 36.3 ms; prefix-count array is slowest at 57.6 ms. Source: data-structures/rank-select/results/bench.csv.</sub></td></tr>
 </table>
 <!-- /FIGURES -->
 

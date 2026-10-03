@@ -86,7 +86,7 @@ Dashed lines are brute-force strategies, dotted lines are heuristics or approxim
 
 <!-- FIGURES:results/bench.csv -->
 <table>
-<tr><td width="50%"><img src="results/figures/build.png" alt="build (results/bench.csv)"><br><sub>build (results/bench.csv)</sub></td><td width="50%"><img src="results/figures/successor.png" alt="successor (results/bench.csv)"><br><sub>successor (results/bench.csv)</sub></td></tr>
+<tr><td width="50%"><img src="results/figures/build.png" alt="build (results/bench.csv)"><br><sub>van-emde-boas: runtime on building from U/16 random keys in a universe of U = n. Largest size n = 16,777,216: van Emde Boas (dense) needs 586 ms, sorted array + binary search only 90.7 ms and std::set 1,851 ms.</sub></td><td width="50%"><img src="results/figures/successor.png" alt="successor (results/bench.csv)"><br><sub>van-emde-boas: runtime on 200,000 successor queries over U = n integers holding U/16 keys. Largest size n = 16,777,216: van Emde Boas (dense) needs 73.7 ms, sorted array + binary search only 47.4 ms and std::set 230 ms. Source: data-structures/van-emde-boas/results/bench.csv.</sub></td></tr>
 </table>
 <!-- /FIGURES -->
 

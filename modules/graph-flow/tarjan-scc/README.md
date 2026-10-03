@@ -68,7 +68,7 @@ Dashed lines are brute-force strategies, dotted lines are heuristics or approxim
 
 <!-- FIGURES:results/bench.csv -->
 <table>
-<tr><td width="50%"><img src="results/figures/random-digraph.png" alt="random-digraph (results/bench.csv)"><br><sub>random-digraph (results/bench.csv)</sub></td><td width="50%"></td></tr>
+<tr><td width="50%"><img src="results/figures/random-digraph.png" alt="random-digraph (results/bench.csv)"><br><sub>How tarjan-scc scales on random directed graphs with n vertices and 1.5n edges. At n = 262,144, Tarjan is slowest at 298 ms; Kosaraju (two-pass baseline) is fastest at 287 ms. Source: graph-flow/tarjan-scc/results/bench.csv.</sub></td><td width="50%"></td></tr>
 </table>
 <!-- /FIGURES -->
 

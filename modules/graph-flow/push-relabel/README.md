@@ -82,7 +82,7 @@ Dashed lines are brute-force strategies, dotted lines are heuristics or approxim
 
 <!-- FIGURES:results/bench.csv -->
 <table>
-<tr><td width="50%"><img src="results/figures/random-sparse.png" alt="random-sparse (results/bench.csv)"><br><sub>random-sparse (results/bench.csv)</sub></td><td width="50%"><img src="results/figures/grid.png" alt="grid (results/bench.csv)"><br><sub>grid (results/bench.csv)</sub></td></tr>
+<tr><td width="50%"><img src="results/figures/random-sparse.png" alt="random-sparse (results/bench.csv)"><br><sub>How push-relabel scales on sparse random networks, about five arcs per vertex. At n = 25,600, push-relabel FIFO is fastest at 93.6 ms; Edmonds-Karp (baseline) is slowest at 211 ms.</sub></td><td width="50%"><img src="results/figures/grid.png" alt="grid (results/bench.csv)"><br><sub>push-relabel: runtime on grid networks with n = k*k vertices. Both axes are logarithmic. Largest size n = 4,096: push-relabel FIFO needs 2.73 ms, Dinic only 1.38 ms and Edmonds-Karp (baseline) 7.71 ms. Source: graph-flow/push-relabel/results/bench.csv.</sub></td></tr>
 </table>
 <!-- /FIGURES -->
 

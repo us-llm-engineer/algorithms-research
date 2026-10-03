@@ -83,7 +83,7 @@ Dashed lines are brute-force strategies, dotted lines are heuristics or approxim
 
 <!-- FIGURES:results/bench.csv -->
 <table>
-<tr><td width="50%"><img src="results/figures/random-sparse.png" alt="random-sparse (results/bench.csv)"><br><sub>random-sparse (results/bench.csv)</sub></td><td width="50%"><img src="results/figures/random-sparse-quality.png" alt="random-sparse quality (results/bench.csv)"><br><sub>random-sparse quality (results/bench.csv)</sub></td></tr>
+<tr><td width="50%"><img src="results/figures/random-sparse.png" alt="random-sparse (results/bench.csv)"><br><sub>min-cost-flow: runtime on sparse random networks requesting 0.3n + 5 units of flow. Largest size n = 1,600: Dijkstra + potentials (module) needs 31.6 ms, greedy no-undo (heuristic) only 12.6 ms and Bellman-Ford SSP (brute force) 34 ms. Source: optimization/min-cost-flow/results/bench.csv.</sub></td><td width="50%"><img src="results/figures/random-sparse-quality.png" alt="random-sparse quality (results/bench.csv)"><br><sub>min-cost-flow: result quality on sparse random networks requesting 0.3n + 5 units of flow. At n = 1,600, Dijkstra + potentials (module) scores 1.000; greedy no-undo (heuristic) is furthest from 1.0 at 1.015.</sub></td></tr>
 </table>
 <!-- /FIGURES -->
 

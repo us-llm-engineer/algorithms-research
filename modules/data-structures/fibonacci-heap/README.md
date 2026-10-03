@@ -87,7 +87,7 @@ Dashed lines are brute-force strategies, dotted lines are heuristics or approxim
 
 <!-- FIGURES:results/bench.csv -->
 <table>
-<tr><td width="50%"><img src="results/figures/push-pop.png" alt="push-pop (results/bench.csv)"><br><sub>push-pop (results/bench.csv)</sub></td><td width="50%"><img src="results/figures/decrease-key.png" alt="decrease-key (results/bench.csv)"><br><sub>decrease-key (results/bench.csv)</sub></td></tr>
+<tr><td width="50%"><img src="results/figures/push-pop.png" alt="push-pop (results/bench.csv)"><br><sub>Median time per strategy for n random keys pushed into an empty heap and then all popped (fibonacci-heap). At n = 1,048,576, fibonacci-heap is slowest at 8,019 ms; std::priority_queue is fastest at 513 ms. Source: data-structures/fibonacci-heap/results/bench.csv.</sub></td><td width="50%"><img src="results/figures/decrease-key.png" alt="decrease-key (results/bench.csv)"><br><sub>fibonacci-heap: runtime on n pushes, n random decrease-keys, then all pops. Largest size n = 1,048,576: fibonacci-heap needs 5,104 ms against 3,844 ms for std::priority_queue (lazy).</sub></td></tr>
 </table>
 <!-- /FIGURES -->
 

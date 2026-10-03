@@ -95,7 +95,7 @@ Dashed lines are brute-force strategies, dotted lines are heuristics or approxim
 
 <!-- FIGURES:results/bench.csv -->
 <table>
-<tr><td width="50%"><img src="results/figures/zipf-stream.png" alt="zipf-stream (results/bench.csv)"><br><sub>zipf-stream (results/bench.csv)</sub></td><td width="50%"><img src="results/figures/zipf-stream-quality.png" alt="zipf-stream quality (results/bench.csv)"><br><sub>zipf-stream quality (results/bench.csv)</sub></td></tr>
+<tr><td width="50%"><img src="results/figures/zipf-stream.png" alt="zipf-stream (results/bench.csv)"><br><sub>Median time per strategy for a Zipf(1.1) stream of n items over n/4 distinct keys (count-min). At n = 4,194,304, Count-Min 2048x4 is fastest at 347 ms; exact hash map is slowest at 689 ms.</sub></td><td width="50%"><img src="results/figures/zipf-stream-quality.png" alt="zipf-stream quality (results/bench.csv)"><br><sub>count-min: result quality on a Zipf(1.1) stream of n items over n/4 distinct keys. At n = 4,194,304, Count-Min 2048x4 scores 1.976; Count-Min 2048x4 is furthest from 1.0 at 1.976. Data: sketches/count-min/results/bench.csv.</sub></td></tr>
 </table>
 <!-- /FIGURES -->
 

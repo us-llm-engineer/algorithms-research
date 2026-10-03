@@ -86,7 +86,7 @@ Dashed lines are brute-force strategies, dotted lines are heuristics or approxim
 
 <!-- FIGURES:results/bench.csv -->
 <table>
-<tr><td width="50%"><img src="results/figures/random-dense-lp.png" alt="random-dense-lp (results/bench.csv)"><br><sub>random-dense-lp (results/bench.csv)</sub></td><td width="50%"><img src="results/figures/random-dense-lp-quality.png" alt="random-dense-lp quality (results/bench.csv)"><br><sub>random-dense-lp quality (results/bench.csv)</sub></td></tr>
+<tr><td width="50%"><img src="results/figures/random-dense-lp.png" alt="random-dense-lp (results/bench.csv)"><br><sub>simplex: runtime on random dense linear programs with n variables and n constraints. Both axes are logarithmic. Largest size n = 256: simplex (module) needs 11.8 ms against 2.84 ms for greedy density (heuristic). Data: optimization/simplex/results/bench.csv.</sub></td><td width="50%"><img src="results/figures/random-dense-lp-quality.png" alt="random-dense-lp quality (results/bench.csv)"><br><sub>Quality versus the exact reference for random dense linear programs with n variables and n constraints (simplex). 1.0 means optimal. At n = 256, simplex (module) scores 1.000; greedy density (heuristic) is furthest from 1.0 at 0.520. Source: optimization/simplex/results/bench.csv.</sub></td></tr>
 </table>
 <!-- /FIGURES -->
 

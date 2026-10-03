@@ -1,0 +1,31 @@
+# algo_module(NAME [DEPENDS target...])
+#
+# Layout assumed in the calling directory:
+#   include/              public headers (the module is header-only unless src/*.cpp exists)
+#   src/*.cpp             optional implementation files
+#   tests/<NAME>_test.cpp Catch2 tests (always built, registered with CTest)
+#   bench/<NAME>_bench.cpp benchmark (built only when ALGO_BUILD_BENCH=ON)
+function(algo_module NAME)
+  cmake_parse_arguments(ARG "" "" "DEPENDS" ${ARGN})
+  file(GLOB SRC_FILES CONFIGURE_DEPENDS "${CMAKE_CURRENT_SOURCE_DIR}/src/*.cpp")
+  if(SRC_FILES)
+    add_library(${NAME} STATIC ${SRC_FILES})
+    set(scope PUBLIC)
+  else()
+    add_library(${NAME} INTERFACE)
+    set(scope INTERFACE)
+  endif()
+  target_include_directories(${NAME} ${scope} "${CMAKE_CURRENT_SOURCE_DIR}/include")
+  target_link_libraries(${NAME} ${scope} algo_common ${ARG_DEPENDS})
+
+  if(EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/tests/${NAME}_test.cpp")
+    add_executable(${NAME}_test "${CMAKE_CURRENT_SOURCE_DIR}/tests/${NAME}_test.cpp")
+    target_link_libraries(${NAME}_test PRIVATE ${NAME} Catch2::Catch2WithMain)
+    catch_discover_tests(${NAME}_test)
+  endif()
+
+  if(ALGO_BUILD_BENCH AND EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/bench/${NAME}_bench.cpp")
+    add_executable(${NAME}_bench "${CMAKE_CURRENT_SOURCE_DIR}/bench/${NAME}_bench.cpp")
+    target_link_libraries(${NAME}_bench PRIVATE ${NAME})
+  endif()
+endfunction()

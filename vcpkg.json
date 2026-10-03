@@ -1,0 +1,6 @@
+{
+  "name": "algorithms-research",
+  "version-string": "0.1.0",
+  "description": "Graduate-level algorithm implementations with proofs, hard tests and benchmarks",
+  "dependencies": ["catch2"]
+}

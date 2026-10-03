@@ -1,5 +1,56 @@
 algorithm,workload,n,median_ms,min_ms,max_ms,reps,extra
-christofides,euclidean-circle,32,0.006105,0.005905,0.008106,5,cost=6.273097
-christofides,euclidean-circle,64,0.020915,0.020515,0.022317,5,cost=6.280662
-christofides,euclidean-circle,128,0.069250,0.068550,0.070151,5,cost=6.282555
-christofides,euclidean-circle,256,0.280504,0.259788,0.421506,5,cost=6.283028
+brute force (permutations),random-euclid,6,0.009019,0.008719,0.009320,3,cost=3.264000;ratio=1.000000
+Held-Karp DP (exact),random-euclid,6,0.002906,0.001804,0.009921,3,cost=3.264000;ratio=1.000000
+nearest neighbour (heuristic),random-euclid,6,0.000601,0.000401,0.001604,3,cost=3.367545;ratio=1.031723
+double-tree MST (2-approx),random-euclid,6,0.001804,0.001403,0.003107,3,cost=4.005322;ratio=1.227121
+nearest neighbour + 2-opt (heuristic),random-euclid,6,0.000901,0.000801,0.001403,3,cost=3.264000;ratio=1.000000
+christofides,random-euclid,6,0.003708,0.003006,0.009219,3,cost=3.264000;ratio=1.000000
+brute force (permutations),random-euclid,8,0.472605,0.469599,0.490043,3,cost=2.517060;ratio=1.000000
+Held-Karp DP (exact),random-euclid,8,0.061331,0.018940,0.427710,3,cost=2.517060;ratio=1.000000
+nearest neighbour (heuristic),random-euclid,8,0.000701,0.000602,0.002605,3,cost=2.666214;ratio=1.059257
+double-tree MST (2-approx),random-euclid,8,0.002104,0.001503,0.005011,3,cost=3.106146;ratio=1.234037
+nearest neighbour + 2-opt (heuristic),random-euclid,8,0.001302,0.001302,0.003707,3,cost=2.517060;ratio=1.000000
+christofides,random-euclid,8,0.004610,0.003408,0.014831,3,cost=2.632831;ratio=1.045995
+brute force (permutations),random-euclid,9,4.203740,3.868326,4.703804,3,cost=2.683129;ratio=1.000000
+Held-Karp DP (exact),random-euclid,9,0.043393,0.041388,0.064838,3,cost=2.683129;ratio=1.000000
+nearest neighbour (heuristic),random-euclid,9,0.000601,0.000501,0.001504,3,cost=2.962454;ratio=1.104104
+double-tree MST (2-approx),random-euclid,9,0.001904,0.001503,0.003107,3,cost=2.962454;ratio=1.104104
+nearest neighbour + 2-opt (heuristic),random-euclid,9,0.001703,0.001604,0.002104,3,cost=2.683129;ratio=1.000000
+christofides,random-euclid,9,0.003207,0.002506,0.007115,3,cost=2.683129;ratio=1.000000
+brute force (permutations),random-euclid,10,58.664358,42.420514,59.683025,3,cost=2.834235;ratio=1.000000
+Held-Karp DP (exact),random-euclid,10,0.151923,0.131680,0.224478,3,cost=2.834235;ratio=1.000000
+nearest neighbour (heuristic),random-euclid,10,0.001002,0.000802,0.003107,3,cost=3.535928;ratio=1.247577
+double-tree MST (2-approx),random-euclid,10,0.003908,0.002305,0.005511,3,cost=3.381092;ratio=1.192947
+nearest neighbour + 2-opt (heuristic),random-euclid,10,0.003608,0.002605,0.004710,3,cost=2.834235;ratio=1.000000
+christofides,random-euclid,10,0.005912,0.004309,0.013929,3,cost=2.834235;ratio=1.000000
+Held-Karp DP (exact),random-euclid,12,0.752801,0.658300,1.097735,5,cost=3.262090;ratio=1.000000
+nearest neighbour (heuristic),random-euclid,12,0.001002,0.000901,0.003107,5,cost=3.364860;ratio=1.031504
+double-tree MST (2-approx),random-euclid,12,0.002806,0.002005,0.007516,5,cost=3.262090;ratio=1.000000
+nearest neighbour + 2-opt (heuristic),random-euclid,12,0.003007,0.002906,0.003508,5,cost=3.300796;ratio=1.011865
+christofides,random-euclid,12,0.005712,0.003909,0.012026,5,cost=3.369085;ratio=1.032800
+Held-Karp DP (exact),random-euclid,14,7.654779,5.965887,14.940573,5,cost=3.109285;ratio=1.000000
+nearest neighbour (heuristic),random-euclid,14,0.001203,0.000902,0.005412,5,cost=3.365046;ratio=1.082257
+double-tree MST (2-approx),random-euclid,14,0.003508,0.002305,0.010522,5,cost=3.705226;ratio=1.191665
+nearest neighbour + 2-opt (heuristic),random-euclid,14,0.003808,0.003708,0.004409,5,cost=3.109285;ratio=1.000000
+christofides,random-euclid,14,0.007215,0.005812,0.019441,5,cost=3.379123;ratio=1.086785
+Held-Karp DP (exact),random-euclid,16,34.828968,29.664987,55.971131,5,cost=3.375083;ratio=1.000000
+nearest neighbour (heuristic),random-euclid,16,0.000902,0.000802,0.003407,5,cost=4.005603;ratio=1.186816
+double-tree MST (2-approx),random-euclid,16,0.002706,0.001905,0.006814,5,cost=4.206106;ratio=1.246223
+nearest neighbour + 2-opt (heuristic),random-euclid,16,0.004911,0.004810,0.005812,5,cost=3.375083;ratio=1.000000
+christofides,random-euclid,16,0.007115,0.005412,0.015533,5,cost=3.636922;ratio=1.077580
+nearest neighbour (heuristic),random-euclid,32,0.003107,0.003007,0.008618,5,cost=6.038084;ratio=1.301041
+double-tree MST (2-approx),random-euclid,32,0.009721,0.007015,0.017037,5,cost=5.493170;ratio=1.183627
+nearest neighbour + 2-opt (heuristic),random-euclid,32,0.030465,0.029162,0.050307,5,cost=4.640962;ratio=1.000000
+christofides,random-euclid,32,0.398046,0.330402,0.749294,5,cost=4.944683;ratio=1.065443
+nearest neighbour (heuristic),random-euclid,64,0.012426,0.010723,0.017638,5,cost=7.349641;ratio=1.161393
+double-tree MST (2-approx),random-euclid,64,0.035676,0.032269,0.044896,5,cost=8.324053;ratio=1.315370
+nearest neighbour + 2-opt (heuristic),random-euclid,64,0.104222,0.101516,0.116748,5,cost=6.328297;ratio=1.000000
+christofides,random-euclid,64,0.056921,0.054416,0.077164,5,cost=7.138173;ratio=1.127977
+nearest neighbour (heuristic),random-euclid,128,0.051409,0.047000,0.057923,5,cost=10.796166;ratio=1.150687
+double-tree MST (2-approx),random-euclid,128,0.146311,0.132983,0.172367,5,cost=11.754192;ratio=1.252796
+nearest neighbour + 2-opt (heuristic),random-euclid,128,0.671728,0.572317,1.662636,5,cost=9.382369;ratio=1.000000
+christofides,random-euclid,128,0.223476,0.208242,0.240211,5,cost=10.602958;ratio=1.130094
+nearest neighbour (heuristic),random-euclid,256,0.193712,0.181086,0.352249,5,cost=14.690674;ratio=1.145360
+double-tree MST (2-approx),random-euclid,256,0.516799,0.499262,0.649582,5,cost=16.535433;ratio=1.289187
+nearest neighbour + 2-opt (heuristic),random-euclid,256,3.468376,2.533888,3.921339,5,cost=12.826250;ratio=1.000000
+christofides,random-euclid,256,1.010148,0.873358,1.364602,5,cost=14.981704;ratio=1.168050

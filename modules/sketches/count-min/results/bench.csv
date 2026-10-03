@@ -1,0 +1,21 @@
+algorithm,workload,n,median_ms,min_ms,max_ms,reps,extra
+exact hash map,zipf-stream,16384,0.670749,0.636452,0.715245,5,memory_kb=86;ratio=1.000000
+sort + count runs (brute force),zipf-stream,16384,0.988725,0.925230,1.863259,5,memory_kb=128;ratio=1.000000
+Misra-Gries k=1024 (heuristic),zipf-stream,16384,0.736144,0.685648,0.943328,5,memory_kb=16;ratio=0.276803
+Count-Min 2048x4,zipf-stream,16384,1.365097,1.220607,2.397517,5,memory_kb=64;ratio=1.082850
+exact hash map,zipf-stream,65536,6.251725,2.366120,8.492554,5,memory_kb=304;ratio=1.000000
+sort + count runs (brute force),zipf-stream,65536,4.663745,4.016894,6.553101,5,memory_kb=512;ratio=1.000000
+Misra-Gries k=1024 (heuristic),zipf-stream,65536,4.078490,3.597427,8.246473,5,memory_kb=16;ratio=0.167058
+Count-Min 2048x4,zipf-stream,65536,7.537527,4.848731,14.457300,5,memory_kb=64;ratio=1.309769
+exact hash map,zipf-stream,262144,47.993550,18.792171,56.830078,5,memory_kb=1087;ratio=1.000000
+sort + count runs (brute force),zipf-stream,262144,26.258803,22.822564,28.892903,5,memory_kb=2048;ratio=1.000000
+Misra-Gries k=1024 (heuristic),zipf-stream,262144,22.512288,19.743298,25.087092,5,memory_kb=16;ratio=0.105549
+Count-Min 2048x4,zipf-stream,262144,19.877088,19.066650,22.405896,5,memory_kb=64;ratio=1.580643
+exact hash map,zipf-stream,1048576,287.558220,277.949378,326.519611,3,memory_kb=3890;ratio=1.000000
+sort + count runs (brute force),zipf-stream,1048576,99.100258,92.514640,121.235214,3,memory_kb=8192;ratio=1.000000
+Misra-Gries k=1024 (heuristic),zipf-stream,1048576,89.949163,89.097143,121.495872,3,memory_kb=16;ratio=0.087501
+Count-Min 2048x4,zipf-stream,1048576,124.493197,105.839603,126.109828,3,memory_kb=64;ratio=1.789976
+exact hash map,zipf-stream,4194304,689.258547,575.792757,1102.349970,3,memory_kb=13985;ratio=1.000000
+sort + count runs (brute force),zipf-stream,4194304,371.895270,292.848329,422.753703,3,memory_kb=32768;ratio=1.000000
+Misra-Gries k=1024 (heuristic),zipf-stream,4194304,401.444540,400.241222,540.362489,3,memory_kb=16;ratio=0.077839
+Count-Min 2048x4,zipf-stream,4194304,346.824017,343.611269,358.418443,3,memory_kb=64;ratio=1.976266

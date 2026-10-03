@@ -1,0 +1,21 @@
+algorithm,workload,n,median_ms,min_ms,max_ms,reps,extra
+Tarjan,random-digraph,128,0.030530,0.025475,0.050462,9,components=117
+Kosaraju (two-pass baseline),random-digraph,128,0.026641,0.025474,0.032669,9,components=117
+brute-force transitive closure,random-digraph,128,0.102481,0.080118,0.128926,3,components=117
+Tarjan,random-digraph,256,0.086535,0.084882,0.121051,9,components=182
+Kosaraju (two-pass baseline),random-digraph,256,0.053088,0.042781,0.081576,9,components=182
+brute-force transitive closure,random-digraph,256,0.297718,0.295870,0.356639,3,components=182
+Tarjan,random-digraph,512,0.204377,0.189695,0.251923,9,components=388
+Kosaraju (two-pass baseline),random-digraph,512,0.125037,0.120079,0.138260,9,components=388
+brute-force transitive closure,random-digraph,512,1.488004,1.124074,1.514743,3,components=388
+Tarjan,random-digraph,1024,0.398934,0.320275,0.464078,9,components=677
+Kosaraju (two-pass baseline),random-digraph,1024,0.252506,0.181333,0.270591,9,components=677
+brute-force transitive closure,random-digraph,1024,4.692309,4.689295,5.366015,3,components=677
+Tarjan,random-digraph,4096,1.897051,1.421111,2.118151,9,components=2749
+Kosaraju (two-pass baseline),random-digraph,4096,1.228888,1.186592,3.321272,9,components=2749
+Tarjan,random-digraph,16384,15.086951,11.436751,19.367979,9,components=10831
+Kosaraju (two-pass baseline),random-digraph,16384,6.994905,4.361534,9.833917,9,components=10831
+Tarjan,random-digraph,65536,57.830720,51.142867,63.049237,5,components=43431
+Kosaraju (two-pass baseline),random-digraph,65536,55.725014,38.366289,64.943759,5,components=43431
+Tarjan,random-digraph,262144,297.794215,242.465412,324.724337,5,components=172679
+Kosaraju (two-pass baseline),random-digraph,262144,287.456498,239.531484,398.710879,5,components=172679

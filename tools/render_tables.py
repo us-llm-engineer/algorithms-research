@@ -20,8 +20,20 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 MARK = re.compile(r"<!-- BENCH:(\S+)((?: \w+=\S+)*) -->\n.*?<!-- /BENCH -->", re.S)
 
 
+def extra_field(extra, key):
+    for part in extra.split(";"):
+        if part.startswith(key + "="):
+            return float(part.split("=", 1)[1])
+    return None
+
+
 def table(csv_path, filters):
+    """`value=<key>` renders the named field of the `extra` column instead of the median time."""
     rows = list(csv.DictReader(open(csv_path)))
+    value = filters.pop("value", None)
+    if value:
+        rows = [dict(r, median_ms=extra_field(r["extra"], value)) for r in rows]
+        rows = [r for r in rows if r["median_ms"] is not None]
     for k, v in filters.items():
         rows = [r for r in rows if r.get(k) == v]
     algs = list(dict.fromkeys(r["algorithm"] for r in rows))
@@ -33,7 +45,7 @@ def table(csv_path, filters):
         cells = [f"{by_n[n][a]:.3f}" if a in by_n[n] else "" for a in algs]
         out.append(f"| {n:,} | " + " | ".join(cells) + " |")
     out.append("")
-    out.append("_Median wall time in milliseconds._")
+    out.append(f"_{value} (see the `extra` column of the CSV)._" if value else "_Median wall time in milliseconds._")
     return "\n".join(out)
 
 
